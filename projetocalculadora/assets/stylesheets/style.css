@@ -1,0 +1,177 @@
+* { 
+	margin: 0;     
+	padding: 0;    
+ }
+
+/*
+Informar para as TAG´s html e body que altura e largura será utilizada em 100% 
+*/
+
+html,			   
+body {
+		width: 100%;
+		height: 100%;
+		background-color: #F2F2F2;
+}
+
+
+/*
+Informar para as Classes Cabecalho, e Rodape a altura será utilizada em 100% 
+*/
+
+.Cabecalho,        
+.Rodape {
+			width: 100%;		
+}
+
+/*
+Classe para configurar o cabeçalho da tela
+*/
+.Cabecalho {     
+				height: 60px;
+				background-color: #464A4F;
+				text-align: center;
+	} 
+
+
+.Cabecalho h1 {     
+				color: white;
+				font: normal 16px sans-serif
+				text-transform: uppercase;
+				margin: 10px;	
+				padding: 10px;		
+	} 
+
+
+/*
+Classe para configurar o miolo da tela
+*/
+.Miolo{			  
+				display: flex;
+				flex-direction: row;
+				height: calc(100% - 180px);
+				width: 90%;
+				margin: 0 auto;
+				align-items: center;
+
+	}	 
+
+/*
+Classe para configurar o rodape da tela
+*/
+.Rodape{		  	
+				height: 120px;
+				background-color: #EEE;
+				background-color: #464A4F;
+	}    
+
+/*
+Classe para listar as informações externas
+*/
+.Post_List {	
+	            float: left;
+	            width:  60%;
+	  			height: 90%;				
+				overflow: auto;	
+	}   
+
+/*
+Classe pai das classes .Autores_List e .Imagens_List
+*/
+.Pai_Autores_Imagens {
+	            		float: right;
+	 					width:  30%;
+	  					height: 90%;				
+						margin-left: 10%;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;			
+}
+
+/*
+Classe para listar os autores
+*/
+.Autores_List {	  
+          		top: 0;
+          		width: 100%;
+          		height: 45%;
+          		align-self: flex-start;
+	} 
+
+/*
+Classe para listar as imagens
+*/
+.Imagens_List {	 
+	     		bottom: 0;
+	     		width: 100%;
+	     		height: 45%;
+	     		align-self: flex-end;
+	}   
+
+/*
+Classe para tratar o conteudo dos artigos
+*/
+.Artigos_Pai {
+		  		width:  90%;
+          		height:  5%;
+          		list-style: none;
+          		margin:  0;
+          		padding: 0;
+          		position: relative;
+}
+
+/*
+Classe para tratar os conteudos dos filhos dos artigos
+*/
+.Artigo_Filho {
+		  		width:  100%;
+          		height: 200px;
+          		border-bottom: 1px solid yellow;          		
+          		position: relative;
+}
+
+.bola {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: red;
+	top: 25%;
+	left: 25%;
+	margin: -25px 0 0 -25px;
+}
+
+/*
+Classe para tratar pontos especificos da classe Artigo_Filho
+*/
+.Artigo_Filho:last-child {border-bottom: none;}
+
+
+/*
+Classe para tratar o conteudo dos autores
+*/
+.Autores_Pai {
+
+}
+
+/*
+Classe para tratar os conteudos dos filhos dos autores
+*/
+.Autores_Filho {
+	
+}
+
+/*
+Classe para tratar o conteudo das imagens
+*/
+.Imagens_Pai {
+
+}
+
+
+/*
+Classe para tratar os conteudos dos filhos das imagens
+*/
+.Imagens_Filho {
+	
+}
